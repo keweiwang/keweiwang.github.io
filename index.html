@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kewei Wang</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="js/jquery.corner.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="bg">
+		<!----- start-header---->
+		<div class="container">
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+					<div class="top-header">
+						<div class="logo">
+							<a href="#">Kewei Wang</a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#about" class="scroll">about</a></li>
+								<li><a href="#process" class="scroll">motto</a></li>
+								<li><a href="#port" class="scroll">hobbies</a></li>
+								<li class="page-scroll"><a href="#contact" class="scroll">contact me</a></li>
+								<li class="active-join" class="page-scroll"><a href="#team" class="scroll">related</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- banner-info ---->
+			<div class="banner-info">
+				<div class="container">
+					<h1 class="wow fadeIn" data-wow-delay="0.5s"><span>I am</span><br /><label>working miracles</label></h1>
+				<div class="top-banner-grids wow bounceInUp" data-wow-delay="0.4s">
+					<div class="banner-grid text-center">
+						<span class="top-icon1"> </span>
+						<h3>Thinker</h3>
+					</div>
+					<div class="banner-grid banner-grid-active text-center">
+						<span class="top-icon2"> </span>
+						<h3>Quick Learner</h3>
+					</div>
+					<div class="banner-grid text-center">
+						<span class="top-icon3"> </span>
+						<h3>Innovation</h3>
+					</div>
+					<div class="banner-grid text-center">
+						<span class="top-icon4"> </span>
+						<h3>Contibuter</h3>
+					</div>
+					<div class="banner-grid text-center">
+						<span class="top-icon5"> </span>
+						<h3>Fortune Creater</h3>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+			<!---- banner-info ---->
+			<!---- top-grids ---->
+			<div class="top-grids text-center">
+				<div class="container">
+					<div class="col-md-3 wow bounceIn" data-wow-delay="0.4s">
+						<div class="top-grid">
+							<span class="icon1"> </span>
+							<h3><a href="#">Web Development</a></h3>
+							<label> </label>
+							<p>I am a full-stack developer, who began web development during freshman year. Familiar with HTML, CSS and PHP.</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceIn" data-wow-delay="0.4s">
+						<div class="top-grid">
+							<span class="icon2"> </span>
+							<h3><a href="#">Mobile Development</a></h3>
+							<label> </label>
+							<p>I am also a professional mobile-side developer. Familar with Android, IOS and Windows.</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceIn" data-wow-delay="0.4s">
+						<div class="top-grid">
+							<span class="icon3"> </span>
+							<h3><a href="#">money making</a></h3>
+							<label> </label>
+							<p>During the past three year, my website and mobile development profit $1000 annually.</p>
+						</div>
+					</div>
+					<div class="col-md-3 wow bounceIn" data-wow-delay="0.4s">
+						<div class="top-grid">
+							<span class="icon4"> </span>
+							<h3><a href="#">Future Plan</a></h3>
+							<label> </label>
+							<p>After finishing my undergraduate education, I am now wanting to chase a master degree.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- top-grids ---->
+			<!---- about ---->
+			<div id="about" class="about">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>about</span><label>Kewei Wang</label></h3>
+					</div>
+				</div>
+					<!--- about-grids ---->
+					<div class="about-grids">
+						<div class="col-md-4 about-grid about-grid1 wow fadeInLeft" data-wow-delay="0.4s">
+							<div class="about-grid-info">
+								<h4><a href="#">Education</a></h4>
+								<p>B.Eng in Software Engineering(Reseach Assistant) from University of Science and Technology Liaoning (Sep.2013 - Jun.2017)</p>
+								<p>Overall GPA: 3.78/4.00</p>
+								<p>Course: Java Programming, C++ Algorithm and Data Strucure, Operating System, Principle of Oracle Database</p>
+							</div>
+							<div class="about-grid-pic">
+							<img src="images/about-pic1.jpg" title="name" />
+							</div>
+						</div>
+						<div class="col-md-4 about-grid about-grid2 wow fadeInUp" data-wow-delay="0.4s">
+							<div class="about-grid-pic">
+							<img src="images/about-pic2.jpg" title="name" />
+							</div>
+							<div class="about-grid-info">
+								<h4><a href="#">Academic Experience</a></h4>
+								<p>Project: Embedded Identity Recognition System based on Techonology of Gesture Recognition </p>
+								<p>-Designed an embedded application system based on the gesture identification technology.</p>
+								<p>Project: Embedded Music Recognition System based on ARM CortexTM-A8</p>
+								<p>-Designed and implemented an embedded Music Recognition system, which was under the B/S and C/S framework, and based on  ARM CortexTM-A8.</p>
+							</div>
+						</div>
+						<div class="col-md-4 about-grid about-grid1 wow fadeInRight" data-wow-delay="0.4s">
+							<div class="about-grid-info">
+								<h4><a href="#">Professional Experience</a></h4>
+								<p>Xi An Information and Technology, Inc.(Nanjing, China)</p>
+								<p>-Got a return offer.</p>
+								<p>-Actively participated in the development of the Embedded Payment System based on the technology of Facial Recognition.</p>
+								<p>-Independently focused on designing a new structure of deep network to accelerate the training procedure of Face Representation.</p>
+							</div>
+							<div class="about-grid-pic">
+							<img src="images/about-pic3.jpg" title="name" />
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!--- /about-grids ---->
+				</div>
+			</div>
+			<!---- about ---->
+
+			<!--- process --->
+			<div id="process" class="process">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>My</span><label>Motto</label></h3>
+					</div>
+				</div>
+				<div class="container">
+					<div class="process-grids text-center wow bounce" data-wow-delay="0.4s">
+						<div class="col-md-3 process-grid process-grid1 wow bounceInUp" data-wow-delay="0.4s">
+							<span class="p-icon1"> </span>
+							<h4><a href="#">Thinking</a></h4>
+						</div>
+						<div class="col-md-3 process-grid process-grid2 wow bounceInDown" data-wow-delay="0.4s">
+							<span class="p-icon2"> </span>
+							<h4><a href="#">Analysing</a></h4>
+						</div>
+						<div class="col-md-3 process-grid process-grid3 wow bounceInUp" data-wow-delay="0.4s">
+							<span class="p-icon3"> </span>
+							<h4><a href="#">Executing</a></h4>
+						</div>
+						<div class="col-md-3 process-grid process-grid4 wow bounceInDown" data-wow-delay="0.4s">
+							<span class="p-icon4"> </span>
+							<h4><a href="#">Success</a></h4>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!--- process --->
+			<!--- blog ---->
+			<div class="blog">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>My Project</span><label>Exihibition</label></h3>
+					</div>
+				</div>
+				<!---- blog-grids ---->
+				<div class="blog-grids">
+					<div class="container">
+					<div class="blog-grids-left">
+							<div class="blog-grid-left wow bounceIn" data-wow-delay="0.4s">
+								<div class="blog-art-pic">
+									<img src="images/b1.png" title="name" />
+								</div>
+								<div class="blog-art-info">
+									<h3><a href="#">Library Borrowing System</a></h3>
+									<p>This is the first software project I finished during my freshman year. The figure shows the client-side for this system, with function of querying, borrowing and etc.</p>
+									<ul class="blog-art-info-stags">
+										<li class="blog-art-info-stags-left"><span>12.11.2013</span></li>
+										<li class="blog-art-info-stags-right">
+											<ul>
+												<li><a href="#"> <label class="b-icon1"> </label>35</a></li>
+												<li><a href="#"> <label class="b-icon2"> </label>7</a></li>
+											</ul>
+										</li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+							</div>
+							<div class="blog-grid-left wow bounceIn" data-wow-delay="0.4s">
+								<div class="blog-art-pic">
+									<img src="images/b2.png" title="name" />
+								</div>
+								<div class="blog-art-info">
+									<h3><a href="#">MOOC Platfrom Development</a></h3>
+									<p>It is an android application I developed during my sophormore year, which is a MOOC platform. The objective consumers of this application is middle-school students.</p>
+									<ul class="blog-art-info-stags">
+										<li class="blog-art-info-stags-left"><span>03.20.2014</span></li>
+										<li class="blog-art-info-stags-right">
+											<ul>
+												<li><a href="#"> <label class="b-icon1"> </label>24</a></li>
+												<li><a href="#"> <label class="b-icon2"> </label>9</a></li>
+											</ul>
+										</li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+							</div>
+						<div class="clearfix"> </div>
+						<!---- ---->
+						<div class="blog-grid-left-big wow bounceIn" data-wow-delay="0.4s">
+							<div class="blog-grid-left-big-info">
+								<div class="blog-art-info">
+									<h3><a href="#">Face Recognition</a></h3>
+									<p>This is a project during my internship, which related to Face Recognition. I actively participated in the development of the Embedded Payment System based on the technology of Facial Recognition. </p>
+									<ul class="blog-art-info-stags">
+										<li class="blog-art-info-stags-left"><span>8.25.2016</span></li>
+										<li class="blog-art-info-stags-right">
+											<ul>
+												<li><a href="#"> <label class="b-icon1"> </label>32</a></li>
+												<li><a href="#"> <label class="b-icon2"> </label>10</a></li>
+											</ul>
+										</li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+							</div>
+							<div class="blog-grid-left-big-pic">
+								<div class="blog-art-pic">
+									<img src="images/b4-new.jpeg" title="name" />
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="blog-grids-right wow bounceIn" data-wow-delay="0.4s">
+						<div class="blog-grid-left blog-grid-right">
+								<div class="blog-art-pic">
+									<img src="images/b3-new.jpeg" title="name" />
+								</div>
+								<div class="blog-art-info">
+									<h3><a href="#">Embedded Music Recognition System</a></h3>
+									<p>During my junior year, I designed and implemented an embedded Music Recognition system, which was under the B/S and C/S framework, and based on  ARM CortexTM-A8.</p>
+									<ul class="blog-art-info-stags">
+										<li class="blog-art-info-stags-left"><span>12.11.2014</span></li>
+										<li class="blog-art-info-stags-right">
+											<ul>
+												<li><a href="#"> <label class="b-icon1"> </label>24</a></li>
+												<li><a href="#"> <label class="b-icon2"> </label>9</a></li>
+											</ul>
+										</li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+							</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!---- blog-grids ---->
+				</div>
+			</div>
+			<!--- blog ---->
+			<!--- portfolio ---->
+			<div id="port" class="portfolio">
+				<div class="head-section">
+					<div class="container">
+						<h3>My Hobby: Photography.</h3>
+					</div>
+				</div>
+				<!--- Portfolio --->
+			<div id="port" class="portfolio-box">
+
+					<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});
+
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+										}
+									);
+
+								}
+
+							};
+							// Run the show!
+							filterList.init();
+						});
+					</script>
+					<div class="container">
+						<!----//End-portfolio-script----->
+						<ul id="filters" class="clearfix">
+							<li class="filtter-color1"><span class="filter active" data-filter="app card icon logo web">All</span></li>
+							<li class="filtter-color2"><span class="filter" data-filter="app">Natural</span></li>
+							<li class="filtter-color3"><span class="filter" data-filter="card">Life</span></li>
+							<li class="filtter-color4"><span class="filter" data-filter="icon">Sports</span></li>
+							<li class="filtter-color5"><span class="filter" data-filter="app">Academic</span></li>
+						</ul>
+					</div>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all port-big-grid wow bounceIn" data-wow-delay="0.5s" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic1.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic2.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio web mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic3.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic4.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic5.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic6.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic7.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic8.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio card mix_all wow bounceIn" data-wow-delay="0.5s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/portpic9.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="caption">
+						     			<h4>heading of project</h4>
+						     			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+				</div>
+			</div>
+			<!---- work-with-us---->
+			<div class="work-with-us text-center">
+				<div class="container">
+					<h4>YOU ALSO WANT? WORK WITH ME!</h4>
+					<p>Contact me through the email, and I will reply you as soon as possible.</p>
+					<a class="catch-me wow shake" data-wow-delay="0.3s" href="#">contact me</a>
+				</div>
+			</div>
+			<!---- work-with-us---->
+			<!--- portfolio ---->
+			<!---- Team ----->
+			<div id="team" class="team">
+				<div class="head-section">
+					<div class="container">
+						<h3><span>My Dream</span><label>Schools</label></h3>
+					</div>
+				</div>
+				<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 3,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel text-center">
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/team-member1-new.png" alt="name">
+					                	<h5><span>Carnegie Mellon University</span></h5>
+					                	<label>Pittsburgh, Pennsylvania</label>
+					                </div>
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/team-member2-new.png" alt="name">
+					                	<h5><span>UCLA</span></h5>
+					                	<label>Los Angeles, California</label>
+					                </div>
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/rsz_new_york_university_sealsvg.png" alt="name">
+					                	<h5><span>New York University</span></h5>
+					                	<label>New York City, New York</label>
+					                </div>
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/rsz_uchicago_presidential_sealsvg.png" alt="name">
+					                	<h5><span>University of Chicago</span></h5>
+					                	<label>Chicago, Illinois</label>
+					                </div>
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/rsz_uiuc_sealsvg.png" alt="name">
+					                	<h5><span>UIUC</span></h5>
+					                	<label>Urbana and Champaign, Illinois</label>
+					                </div>
+					                <div class="item wow zoomIn" data-wow-delay="0.3s">
+					                	<img class="lazyOwl" data-src="images/rsz_northeastern-sealsvg.png" alt="name">
+					                	<h5><span>Northeastern</span>University</h5>
+					                	<label>Boston, MA</label>
+					                </div>
+				              </div>
+						<!--//sreen-gallery-cursual---->
+			</div>
+			</div>
+			<!---- Team ----->
+			<!---- map ---->
+			<div id="contact" class="map">
+				<div class="map-location">
+					<iframe src="images/rsz_2016-12-21_154944.png"></iframe>
+				</div>
+				<div class="contact-info text-center wow fadeInLeft" data-wow-delay="0.3s">
+					<h4><span>Kewei Wang</span></h4>
+					<p><span class="map-icon1"> </span>No.15 Building, Huibao International Garden, Shenyang, China, 110000</p>
+					<p><span class="map-icon2"> </span>419885573@qq.com</p>
+					<p><span class="map-icon3"> </span>(+86)176-1249-5827</p>
+				</div>
+			</div>
+			<!---- map ---->
+			<div class="clearfix"> </div>
+			<!---- footer --->
+			<div class="footer text-center">
+				<div class="container">
+					<div class="footer-inner wow zoomIn" data-wow-delay="0.3s">
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a class="contact-me" href="#">contact me</a></li>
+						</ul>
+					</div>
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+			<!---- footer --->
+		</div>
+</body>
+</html>
